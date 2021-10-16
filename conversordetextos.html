@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de textos 1.0</title>
+    <link rel="stylesheet" href="conversordetextos.css">
+</head>
+<body>
+    <header> 
+        <h1> Conversor de textos 1.0 </h1>  
+    </header>
+
+    <section>
+        <div id="cabeçalho"> 
+            <p> Aqui você pode converter todas as palavras do seu texto para letras maiúsculas ou minúsculas! </p>
+            <p> <strong> Digite ou cole seu texto no campo abaixo:</strong>                
+            </p>
+        </div>
+        
+        <div id="entry">
+            <input type="textarea" name="inputext" id="txt"> <br><br>
+        </div>
+
+        <div id="options">
+            <input type="radio" name="type" id="maiusc" checked> 
+            <label for = "maiusc" > Converter para letras maiúsculas </label><br>
+            <input type="radio" name="type" id="minus">
+            <label for = "minus" > Converter para letras minúsculas </label><br>
+            <input type="radio" name="type" id="capit">
+            <label for = "capit" > Primeira letra maiúscula </label><br><br>
+            <input type="button" value="Converter" onclick="converter()"><br>
+            <p><strong>Resultado:</strong></p>
+        </div>
+        <div id="res">
+            
+        </div>
+            
+        </p>
+    </section>
+    
+    <footer>
+        <p> &copy; By Mylla</p>
+    </footer>
+
+    <script src= "conversordetexts.js"></script>
+
+</body>
+</html>
